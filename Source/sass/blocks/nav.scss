@@ -31,6 +31,10 @@
     top: 0;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav--opened .nav__toggle {
@@ -48,6 +52,10 @@
     height: 25px;
     top: 0;
     left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
