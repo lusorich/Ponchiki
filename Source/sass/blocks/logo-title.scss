@@ -6,11 +6,27 @@
   padding: 0;
   color: #ffffff;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 .logo-title__link {
+  position: absolute;
   align-self: center;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    left: 10%;
+    margin-right: 0;
+  }
 }

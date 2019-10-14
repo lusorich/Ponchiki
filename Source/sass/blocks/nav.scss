@@ -1,18 +1,60 @@
 .nav {
   margin: 10px 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .nav__list {
   @include montsReg;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
   position: absolute;
   display: flex;
   flex-direction: column;
   font-size: 18px;
   line-height: 22px;
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0 -10px;
   padding: 0;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: transparent;
+    padding: 0 0 0 172px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 98%;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 35%;
+    width: 60%;
+    font-size: 26px;
+    line-height: 26px;
+    box-sizing: unset;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 32px;
+  }
+}
+
+.nav__item {
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    width: 25%;
+  }
 }
 
 .nav--closed .nav__toggle {
@@ -63,5 +105,17 @@
 @media (max-width: $tablet-width - 1px) {
   .nav--closed .nav__list {
     display: none;
+  }
+}
+
+.nav__item-link {
+  display: block;
+  padding: 18px 0;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    text-transform: initial;
+    color: #ffffff;
   }
 }
