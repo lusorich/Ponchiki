@@ -34,18 +34,13 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 0 35%;
     width: 60%;
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     box-sizing: unset;
   }
 
-  @media (min-width: 1600px) {
-    font-size: 28px;
-    line-height: 32px;
-  }
-
   @media (min-width: 1800px) {
-    font-size: 32px;
+    font-size: 22px;
   }
 }
 
