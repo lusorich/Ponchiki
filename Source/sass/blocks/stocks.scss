@@ -1,4 +1,5 @@
 .stocks {
+  position: relative;
   background-color: #FCC522;
 }
 
@@ -8,6 +9,7 @@
   line-height: 30px;
   color: #ffffff;
   margin: 0;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -30,25 +32,29 @@
 }
 
 .stocks__donut-img--pink {
-  left: 92px;
-  top: 51px;
+  transform: rotate(1deg);
+  top: 40px;
+  left: 22%;
   position: absolute;
-  left: 65%;
-  margin-right: -50%;
-  transform: translate(-50%,0);
 }
 
 .stocks__donut-img--yellow {
-  top: 123px;
+  top: 8px;
+  left: 41%;
+  transform: rotate(245deg);
   position: absolute;
-  transform: rotate(63deg);
-  position: absolute;
-  left: 2%;
 }
 
 .stocks__wrapper-img {
   position: relative;
-  height: 300px;
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
+  padding-bottom: 210px;
+}
+
+.stocks__wrapper-desc {
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
 }
