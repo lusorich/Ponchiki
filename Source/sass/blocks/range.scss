@@ -1,3 +1,33 @@
 .range {
   background-color: #1ED6D6;
 }
+
+.range__title {
+  @include montsBlack;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.range__product {
+  @include montsBlack;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 20px 50px 0 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.range__desc {
+  @include montsReg;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 10px 180px 40px 45px;
+  color: #ffffff;
+}
