@@ -27,7 +27,7 @@
     "start": "gulp start"
   },
   "dependencies": {
-    "npm": "^6.9.0"
+    "npm": "^6.13.4"
   },
   "main": "gulpfile.js",
   "repository": {
